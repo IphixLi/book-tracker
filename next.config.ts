@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  devIndicators: {
+    appIsrStatus: false, // For newer versions of Next.js
+    buildActivity: false, // To hide the build spinner
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig
